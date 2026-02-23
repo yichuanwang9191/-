@@ -1,20 +1,46 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 忍者防御 (火之意志) - Shinobi Defense (Will of Fire)
 
-# Run and deploy your AI Studio app
+一个基于 Naruto 题材的塔防游戏，使用 React + Vite + Tailwind CSS 构建。
 
-This contains everything you need to run your app locally.
+## 🚀 快速开始
 
-View your app in AI Studio: https://ai.studio/apps/e2c9e073-b0c3-4d85-8ab9-34b1edb8f50a
+### 本地开发
 
-## Run Locally
+1. 克隆仓库：
+   ```bash
+   git clone <your-repo-url>
+   cd shinobi-defense
+   ```
 
-**Prerequisites:**  Node.js
+2. 安装依赖：
+   ```bash
+   npm install
+   ```
 
+3. 启动开发服务器：
+   ```bash
+   npm run dev
+   ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 部署到 Vercel
+
+1. 将代码推送至 GitHub。
+2. 在 [Vercel 控制台](https://vercel.com) 中导入该仓库。
+3. **重要配置**：在 Vercel 的环境变量 (Environment Variables) 中添加以下变量：
+   - `GEMINI_API_KEY`: 你的 Google Gemini API 密钥（如果游戏逻辑中使用了 AI 功能）。
+4. 点击部署。
+
+## 🎮 玩法说明
+
+- **目标**：保护木叶村免受苦无袭击。
+- **操作**：点击屏幕发射手里剑进行拦截。
+- **得分**：击毁敌方苦无获得功勋，达到 1000 分即可获胜。
+- **资源**：注意查克拉（弹药）的使用。
+
+## 🛠️ 技术栈
+
+- **前端框架**: React 19
+- **构建工具**: Vite 6
+- **样式**: Tailwind CSS 4
+- **动画**: Motion
+- **图标**: Lucide React
